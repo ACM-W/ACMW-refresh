@@ -1,7 +1,23 @@
+<!doctype html>
 {% extends "base.html" %}
 {% block content %}
-<h1>HELLO</h1>
+<div class="section section-header">
+  <div class="parallax filter filter-color-blue">
+    <div class="image homepage-image"></div>
+    <div class="container">
+      <div class="content">
+        <div class="title-area">
+          <p>California State University, Fullerton</p>
+          <h1 class="title-modern">ACM-W</h1>
+          <h3>Association for Computing Machinery - Women</h3>
+          <div class="separator line-separator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ lipsum(n=20) }}
+<h1 class="text-success">hello!</h1>
 {% endblock %}
-
 {% block scripts %}
 {% endblock %}
