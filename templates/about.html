@@ -1,0 +1,63 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+<div class="section section-header section-header-small">
+  <div class="parallax filter filter-color-blue">
+    <div class="image" style="background-image: url({{ url_for('static', filename='img/ACMWBackground.png') }});"></div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <h1>About Us</h1>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 sidebar">
+        <div class="card card-blog card-plain card-info">
+          <div class="content">
+            <h2 class="card-title">Welcome!</h2>
+            <div class="line-divider line-warning"></div>
+            <p class="text-gray">
+              We hope you take the opportunity to unite with our club and further your experience and knowledge!</p>
+              <p class="text-primary"><strong>Our general meetings are on Wednesdays at 6:30 p.m.</strong></p>
+              <p>We're always looking for new members and any volunteers are always welcomed! No membership fee is required, just your enthusiasm and interest. Thank you!</p>
+            </div>
+          </div>
+          <h2 class="text-center">Board Members</h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="project">
+                <img src="{{ url_for('static', filename='img/staff/marianne.jpg') }}" alt="Marianne - President"/>
+                <div class="over-area">
+                  <h3>Marianne Tolentino</h3>
+                  <p>President</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="project">
+                <img src="{{ url_for('static', filename='img/staff/chris.jpg') }}" alt="Chris - Vice President"/>
+                <div class="over-area">
+                  <h3>Chris Villanueva</h3>
+                  <p>Vice President</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <h2>Association For Computing Machinery - Women</h2>
+          <p class="description">at California State University, Fullerton</p>
+          <img class="img-responsive" src="{{ url_for('static', filename='img/ACMWBackground.png') }}" />
+          <hr class="orange-bar" />
+          <p>
+            Our club was born in Fall 2015. Kathy Saad- the first President and Michael Shafae - the first advisor, were the founders of our club. Ever since it has continued to grow with more members joining and events becoming more successful.</p>
+            <p>Our purpose is to reach out to local communities with a focus on a younger female audience, and teach them the exciting world of computer science. We do this by teaching them fundamental concepts of computer programming by providing them with interactive experiences. Ozobots are a great device we use to teach young girls how to code. As they require minimal setup and give the conceptial ideas of how to program an object. We do reach out to older crowds with a higher level of thirst for knowledge. Raspberry Pi's are a great way to show them the possibilites as it is a very versatile piece of equipment. Through our interaction with students, projects were made, knowledge was gained, and friendships were formed.</p>
+            <p>We engage with our local community by hosting events and inviting interested members. The events are described below.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
