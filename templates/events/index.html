@@ -1,7 +1,26 @@
 <!doctype html>
 {% extends "base.html" %}
 {% block content %}
+{% include "banner.html" %}
 <div class="container">
-
+  <div class="section">
+    <div class="row">
+    <div class="card card-blog col-md-6">
+      <a href="/events/code-camp" class="header">
+        <img src="{{ url_for('static', filename='img/TITANS-scenic.jpg')}}" alt="Code Camp">
+        {# TO-DO: Replace this image with something whose dimensions are 1440 x 810 #}
+      </a>
+      <div class="content">
+        <h6 class="card-date">date goes here</h6>
+        <a href="/events/code-camp" class="card-title">
+          <h2>Code Camp</h2>
+        </a>
+        <div class="line-divider line-success"></div>
+        <p class="text-description">{{ lipsum(n=1) }}</p>
+      </div>
+    </div>
+    {# another TO-DO: copy this div ^ for every other event #}
+    </div>
+  </div>
 </div>
 {% endblock %}

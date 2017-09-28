@@ -1,0 +1,53 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block content %}
+{% include "banner.html" %}
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/marianne.jpg') }}" alt="Marianne" />
+          <div class="over-area" >
+            <div class="content">
+              <span class="label label-info label-fill">President</span>
+              <h2>Marianne Tolentino</h2>
+              <p>Why do java programmers wear classes? Because they can't C#!</p>
+              <span>
+                <a class="btn btn-social btn-facebook btn-simple" href="#">
+                  <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
+                </a>
+                <a class="btn btn-social btn-twitter btn-simple" href="#">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="#">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="#">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="project">
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="project">
+
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="project">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 import os
 
@@ -10,7 +10,20 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', bannerurl=url_for('static', filename='img/ACMWBackground.png'), title='About Us')
+
+@app.route('/board')
+def members():
+    return render_template('members.html', bannerurl=url_for('static', filename='img/ACMWBackground.png'), title='Board Members')
+
+@app.route('/events')
+def events_home():
+    return render_template('events/index.html', bannerurl=url_for('static', filename='img/TITANS-scenic.jpg'), title='Events')
+
+@app.route('/contact')
+def contact_us():
+    return render_template('contact.html')
+
 
 @app.cli.command('sass-compile')
 def sass_compile():
