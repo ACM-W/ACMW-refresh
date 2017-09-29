@@ -1,16 +1,8 @@
 <!doctype html>
 {% extends "base.html" %}
 {% block content %}
-<div class="section section-header section-header-small">
-  <div class="parallax filter filter-color-blue">
-    <div class="image" style="background-image: url({{ url_for('static', filename='img/ACMWBackground.png') }});"></div>
-  </div>
-  <div class="container">
-    <div class="content">
-      <h1>About Us</h1>
-    </div>
-  </div>
-</div>
+{% include "banner.html" %}
+{# To-Do for this page: Crop the event images differently - they leave gray space on mobile device-size breakpoints #}
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-push-4">
@@ -25,8 +17,7 @@
           <p>We engage with our local community by hosting events and inviting interested members. The events are described below.</p>
         </div>
         <div class="section section-our-projects">
-          <div class="project">
-            <img src="{{ url_for('static', filename='img/creative-coding.jpg') }}" alt="creative coding" />
+          <div class="project" style="background-image: url({{ url_for('static', filename='img/events/creative-coding.jpg') }})">
             <a class="over-area" href="/events/creative-coding">
               <div class="content">
                 <h1>Creative Coding</h1>
@@ -34,18 +25,16 @@
               </div>
             </a>
           </div>
-          <div class="project">
-            <img src="{{ url_for('static', filename='img/creative-coding.jpg') }}" alt="creative coding" />
-            <a class="over-area" href="/events/creative-coding">
+          <div class="project" style="background-image: url({{ url_for('static', filename='img/events/stem-expo.jpg') }})">
+            <a class="over-area" href="/events/stem-expo">
               <div class="content">
                 <h1>Stem Expo</h1>
                 <p>We've teamed up with the Girls Scouts of Orange County and on October 30, 2016 they bring over 400 girls scouts ranging from 4th to 12th grade to the Fullerton campus. The event is designed to show them the great opportunities that the Science, Technology, Engineering and Mathematics field can offer for their lives and future. We have another STEM Expo event coming up this year on October 15, 2017. </p>
               </div>
             </a>
           </div>
-          <div class="project">
-            <img src="{{ url_for('static', filename='img/creative-coding.jpg') }}" alt="creative coding" />
-            <a class="over-area" href="/events/creative-coding">
+          <div class="project" style="background-image: url({{ url_for('static', filename='img/events/leadership-summit.jpg') }})">
+            <a class="over-area" href="/events/leadership-summit">
               <div class="content">
                 <h1>Leadership and Diversity Summit</h1>
                 <p>This summit was hosted by both ACM &amp; ACMW. In this event, CSUF students were able to gather insightful information about what to expect when working in the technical industry. Professionals directly spoke to students to share their experience and provide useful tips that students can take with them in their pursuit of their career.</p>

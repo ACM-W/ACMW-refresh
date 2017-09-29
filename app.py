@@ -20,6 +20,10 @@ def members():
 def events_home():
     return render_template('events/index.html', bannerurl=url_for('static', filename='img/TITANS-scenic.jpg'), title='Events')
 
+@app.route('/events/code-camp')
+def code_camp():
+    return render_template('events/code-camp.html', bannerurl=url_for('static', filename='img/events/code-camp.jpg'), title='Code Camp')
+
 @app.route('/contact')
 def contact_us():
     return render_template('contact.html')
