@@ -2,8 +2,12 @@
 {% extends "base.html" %}
 {% block content %}
 {% include "banner.html" %}
-<div class="section">
-  <div class="separator separator-primary">✻</div>
+<div class="section section-members">
+  <div class="title-area">
+    <h1>ACM-W Board Members</h1>
+    <div class="separator separator-primary">✻</div>
+    <p class="text-description">Hover over any person to learn more about them.</p>
+  </div>
   <div class="container">
     <div class="row">
       {# Want to add yourself? Copy everything in this div! #}
@@ -13,7 +17,7 @@
           <div class="over-area" >
             <div class="content">
               <span class="label label-primary label-fill">President</span>
-              <h2>Marianne Tolentino</h2>
+              <h1>Marianne Tolentino</h1>
               <p>Why do java programmers wear glasses? Because they can't C#!</p> {# love a good programming joke #}
               <span>
                 <a class="btn btn-social btn-facebook btn-simple" href="#"> {# change the hrefs to link to your profile #}
@@ -27,89 +31,204 @@
                 </a>
                 <a class="btn btn-social btn-github btn-simple" href="#">
                   <i class="fa fa-github" aria-role="github icon"></i>
-                </a></span>
-              </div>
+                </a>
+              </span>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="project project-board-member">
-            <img src="{{ url_for('static', filename='img/staff/chris.jpg') }}" alt="Chris" />
-            <div class="over-area" >
-              <div class="content">
-                <span class="label label-info label-fill">Vice President</span>
-                <h2>Chris Villanueva</h2>
-                <p>Is your name Wi-Fi? Because I'm feeling a connection.</p>
-                <span>
-                  <a class="btn btn-social btn-facebook btn-simple" href="#">
-                    <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
-                  </a>
-                  <a class="btn btn-social btn-twitter btn-simple" href="#">
-                    <i class="fa fa-twitter" aria-role="twitter icon"></i>
-                  </a>
-                  <a class="btn btn-social btn-instagram btn-simple" href="#">
-                    <i class="fa fa-instagram" aria-role="instagram icon"></i>
-                  </a>
-                  <a class="btn btn-social btn-github btn-simple" href="#">
-                    <i class="fa fa-github" aria-role="github icon"></i>
-                  </a></span>
-                </div>
-              </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/chris.jpg') }}" alt="Chris" />
+          <div class="over-area" >
+            <div class="content">
+              <span class="label label-info label-fill">Vice President</span>
+              <h1>Chris Villanueva</h1>
+              <p>Is your name Wi-Fi? Because I'm feeling a connection.</p>
+              <span>
+                <a class="btn btn-social btn-facebook btn-simple" href="#">
+                  <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
+                </a>
+                <a class="btn btn-social btn-twitter btn-simple" href="#">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="#">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="#">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+              </span>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="project project-board-member">
-              <img src="{{ url_for('static', filename='img/staff/pooja.jpg') }}" alt="Pooja" />
-              <div class="over-area" >
-                <div class="content">
-                  <span class="label label-success label-fill">Secretary</span>
-                  <h2>Pooja Gajjar</h2>
-                  <p>The future, the present and the past walked into a bar. Things got a little tense.</p>
-                  <span>
-                    <a class="btn btn-social btn-facebook btn-simple" href="#">
-                      <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
-                    </a>
-                    <a class="btn btn-social btn-twitter btn-simple" href="#">
-                      <i class="fa fa-twitter" aria-role="twitter icon"></i>
-                    </a>
-                    <a class="btn btn-social btn-instagram btn-simple" href="#">
-                      <i class="fa fa-instagram" aria-role="instagram icon"></i>
-                    </a>
-                    <a class="btn btn-social btn-github btn-simple" href="#">
-                      <i class="fa fa-github" aria-role="github icon"></i>
-                    </a></span>
-                  </div>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/pooja.jpg') }}" alt="Pooja" />
+          <div class="over-area" >
+            <div class="content">
+              <span class="label label-success label-fill">Secretary</span>
+              <h1>Pooja Gajjar</h1>
+              <p>The future, the present and the past walked into a bar. Things got a little tense.</p>
+              <span>
+                <a class="btn btn-social btn-facebook btn-simple" href="#">
+                  <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
+                </a>
+                <a class="btn btn-social btn-twitter btn-simple" href="#">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="#">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="#">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+              </span>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="project project-board-member">
-                <img src="{{ url_for('static', filename='img/staff/luke.jpg') }}" alt="Pooja" />
-                <div class="over-area" >
-                  <div class="content">
-                    <span class="label label-danger label-fill">web design friend</span>
-                    <h2>Luke<br/>Higgott</h2>
-                    <p>my life is a series of one big<br/><samp><strong>417 Expectation Failed</strong></samp><br/>after another</p>
-                    <span>
-                      <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/lukewalkskyer" target="_blank">
-                        <i class="fa fa-twitter" aria-role="twitter icon"></i>
-                      </a>
-                      <a class="btn btn-social btn-instagram btn-simple" href="http://instagram.com/lukewalkskyer" target="_blank">
-                        <i class="fa fa-instagram" aria-role="instagram icon"></i>
-                      </a>
-                      <a class="btn btn-social btn-github btn-simple" href="https://github.com/higgottluke" target="_blank">
-                        <i class="fa fa-github" aria-role="github icon"></i>
-                      </a>
-                      <a class="btn btn-social btn-email btn-simple" href="mailto:luke.higgott@csu.fullerton.edu" target="_blank">
-                        <i class="fa fa-envelope-o" aria-role="email icon"></i>
-                      </a></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/saqib.jpg') }}" alt="Saqib" />
+          <div class="over-area" >
+            <div class="content">
+              <span class="label label-warning label-fill">Treasurer</span>
+              <h1>Saqib Shahabuddin</h1>
+              <p>What do computers and air conditioners have in common? They both become useless when you open WINDOWS.</p>
+              <span>
+                <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/lukewalkskyer" target="_blank">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="http://instagram.com/lukewalkskyer" target="_blank">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="https://github.com/higgottluke" target="_blank">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+                <a class="btn btn-social btn-email btn-simple" href="mailto:luke.higgott@csu.fullerton.edu" target="_blank">
+                  <i class="fa fa-envelope-o" aria-role="email icon"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/tommy.jpg') }}" alt="Saqib" />
+          <div class="over-area" >
+            <div class="content">
+              <span class="label label-primary label-fill">ICC Representative</span>
+              <h1>Tommy Chao</h1>
+              <p>What's the worst thing about throwing a party in space? You have to PLANET.</p>
+              <span>
+                <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/lukewalkskyer" target="_blank">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="http://instagram.com/lukewalkskyer" target="_blank">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="https://github.com/higgottluke" target="_blank">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+                <a class="btn btn-social btn-email btn-simple" href="mailto:luke.higgott@csu.fullerton.edu" target="_blank">
+                  <i class="fa fa-envelope-o" aria-role="email icon"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/luke.jpg') }}" alt="Luke" />
+          <div class="over-area" >
+            <div class="content">
+              <span class="label label-danger label-fill">web design friend</span>
+              <h1>Luke Higgott</h1>
+              <p>my life is a series of one big<br/><samp><strong>417 Expectation Failed</strong></samp><br/>after another</p>
+              <span>
+                <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/lukewalkskyer" target="_blank">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="http://instagram.com/lukewalkskyer" target="_blank">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="https://github.com/higgottluke" target="_blank">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+                <a class="btn btn-social btn-email btn-simple" href="mailto:luke.higgott@csu.fullerton.edu" target="_blank">
+                  <i class="fa fa-envelope-o" aria-role="email icon"></i>
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="section section-members">
+  <div class="container">
+    <div class="title-area">
+      <h1>Faculty Advisors</h1>
+      <div class="separator separator-warning">✻</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-md-offset-1">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/beth.png') }}" alt="Beth" />
+          <div class="over-area" >
+            <div class="content">
+              <h1>Beth Harnick-Shapiro</h1>
+              <p>What is a werewolf programmer’s favorite Java program? - Eclipse.</p> {# love a good programming joke #}
+              <span>
+                <a class="btn btn-social btn-facebook btn-simple" href="#"> {# change the hrefs to link to your profile #}
+                  <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
+                </a>
+                <a class="btn btn-social btn-twitter btn-simple" href="#">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="#">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="#">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-md-offset-2">
+        <div class="project project-board-member">
+          <img src="{{ url_for('static', filename='img/staff/doina.png') }}" alt="Doina" />
+          <div class="over-area" >
+            <div class="content">
+              <h1>Doina Bein</h1>
+              <p>Why was the array a boring person? Because he was one dimensional!</p> {# love a good programming joke #}
+              <span>
+                <a class="btn btn-social btn-facebook btn-simple" href="#"> {# change the hrefs to link to your profile #}
+                  <i class="fa fa-facebook-square" aria-role="facebook icon"></i>
+                </a>
+                <a class="btn btn-social btn-twitter btn-simple" href="#">
+                  <i class="fa fa-twitter" aria-role="twitter icon"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="#">
+                  <i class="fa fa-instagram" aria-role="instagram icon"></i>
+                </a>
+                <a class="btn btn-social btn-github btn-simple" href="#">
+                  <i class="fa fa-github" aria-role="github icon"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    {% endblock %}
+{% endblock %}
