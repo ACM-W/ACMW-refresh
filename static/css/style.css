@@ -62,3 +62,9 @@ hr.orange-bar {
 .section-members {
   padding-bottom: 0;
 }
+.separator-white {
+  color: white;
+}
+.separator-white:before, .separator-white:after {
+  border: 1px solid white;
+}

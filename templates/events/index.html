@@ -2,20 +2,58 @@
 {% extends "base.html" %}
 {% block content %}
 {% include "banner.html" %}
-<div class="container">
+<div class="container-fluid">
   <div class="section">
     <div class="row">
-    <div class="card card-blog col-md-6">
-      <a href="/events/code-camp" class="header">
-        <img src="{{ url_for('static', filename='img/TITANS-scenic.jpg')}}" alt="Code Camp">
-        {# TO-DO: Replace this image with something whose dimensions are 1440 x 810 #}
+    <div class="card card-blog col-lg-6">
+      <a href="/events/stem-expo" class="header">
+        <img src="{{ url_for('static', filename='img/events/stem-expo.jpg')}}" alt="STEM Expo">
       </a>
       <div class="content">
-        <h6 class="card-date">date goes here</h6>
+        <h6 class="card-date">October 16, 2017</h6>
+        <a href="/events/code-camp" class="card-title">
+          <h2>STEM Expo</h2>
+        </a>
+        <div class="line-divider line-info"></div>
+        <p class="text-description">{{ lipsum(n=1) }}</p>
+      </div>
+    </div>
+    <div class="card card-blog col-lg-6">
+      <a href="/events/code-camp" class="header">
+        <img src="{{ url_for('static', filename='img/events/code-camp.jpg')}}" alt="Code Camp">
+      </a>
+      <div class="content">
+        <h6 class="card-date">May 6, 2017</h6>
         <a href="/events/code-camp" class="card-title">
           <h2>Code Camp</h2>
         </a>
-        <div class="line-divider line-success"></div>
+        <div class="line-divider line-info"></div>
+        <p class="text-description">{{ lipsum(n=1) }}</p>
+      </div>
+    </div>
+    <div class="card card-blog col-lg-6">
+      <a href="/events/leadership-summit" class="header">
+        <img src="{{ url_for('static', filename='img/events/leadership-summit.jpg')}}" alt="CS Diversity &amp; Leadership Summit">
+      </a>
+      <div class="content">
+        <h6 class="card-date">April 29, 2017</h6>
+        <a href="/events/code-camp" class="card-title">
+          <h2>Computer Science Diversity &amp; Leadership Summit</h2>
+        </a>
+        <div class="line-divider line-info"></div>
+        <p class="text-description">{{ lipsum(n=1) }}</p>
+      </div>
+    </div>
+    <div class="card card-blog col-lg-6">
+      <a href="/events/creative-coding" class="header">
+        <img src="{{ url_for('static', filename='img/events/creative-coding.jpg')}}" alt="Creative Coding">
+      </a>
+      <div class="content">
+        <h6 class="card-date">Various Dates</h6>
+        <a href="/events/code-camp" class="card-title">
+          <h2>Creative Coding</h2>
+        </a>
+        <div class="line-divider line-info"></div>
         <p class="text-description">{{ lipsum(n=1) }}</p>
       </div>
     </div>
