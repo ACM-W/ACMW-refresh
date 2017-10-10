@@ -33,15 +33,15 @@ def creative_coding():
 
 @app.route('/events/leadership-summit')
 def leadership_summit():
-    return render_template('events/leadership-summit.html', bannerurl=url_for('static', filename='img/events/leadership-summit.jpg'), title='Computer Science Diversity and Leadership Summit')
+    return render_template('events/summit.html', bannerurl=url_for('static', filename='img/events/leadership-summit.jpg'), title='Computer Science Diversity and Leadership Summit')
 
 @app.route('/events/stem-expo')
-def leadership_summit():
-    return render_template('events/stem-expo.html', bannerurl=url_for('static', filename='img/events/stem-expo.jpg'), title='STEM Expo')
+def stem_expo():
+    return render_template('events/expo.html', bannerurl=url_for('static', filename='img/events/stem-expo.jpg'), title='STEM Expo')
 
 @app.route('/contact')
 def contact_us():
-    return render_template('contact.html')
+    return render_template('contact.html', bannerurl=url_for('static', filename='img/TITANS-scenic.jpg'), title='Contact Us')
 
 
 # this is the code that runs when a request is sent with a URL that doesn't match any routes

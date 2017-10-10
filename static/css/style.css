@@ -68,3 +68,10 @@ hr.orange-bar {
 .separator-white:before, .separator-white:after {
   border: 1px solid white;
 }
+.text-white {
+  color: white !important;
+}
+.text-black {
+  color: black;
+  font-size: inherit !important;
+}
