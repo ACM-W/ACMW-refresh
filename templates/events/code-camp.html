@@ -1,14 +1,49 @@
-<!doctype html>
-{% extends "base.html" %}
-{% block content %}
-{% include "banner.html" %}
+<!doctype html> {% extends "base.html" %} {% block content %} {% include "banner.html" %}
 <div class="section">
-  <div class="container">
-    <div class="title-area">
-      <h1 class="title">Code Camp</h1>
-      <div class="separator separator-warning">✻</div>
-      <p>{# Jennifer - put content here! #}</p>
+    <div class="container">
+        <div class="title-area">
+            <h1 class="title">Code Camp</h1>
+            <div class="separator separator-warning">✻</div>
+            <iframe width="674" height="350" src="https://www.youtube.com/embed/W-G6-G28oeY" frameborder="0" allowfullscreen></iframe>
+            <br></br>
+            <p>This event was designed to give both local students from high schools and CSUF students at any level new computer skills to learn. We held multiple workshops that each discussed a different application for programming languages. Some students were able to learn the building blocks on how to build a game through Unity, understand cloud systems and devices, and physical application on circuit boards. </p>
+            <div class="separator separator-warning">✻</div>
+        </div>
+
+
+        <div class="card card-plain card-blog">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="content">
+                        <h2>Unity</h2>
+                        <p class="text-gray">Learn the building blocks to create a 2D and 3D game in Unity. Learn the scene view, game view, the hierarchy and Parent-Child relationships, differnt game objects, components and how to use the built in inspector tool.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <img src="/static/img/events/code-camp2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-plain card-blog">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/static/img/events/code-camp1.jpg">
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="content">
+                        <h2>Circuit Boards</h2>
+                        <p class="text-gray">Learn physical application on circuit boards. Lessons on how circuits work and where to place the wires to light up LEDs in a safe and friendly environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-area">
+            <br></br>
+            <h1>More Workshops Coming Soon!</h1>
+        </div>
+
     </div>
-  </div>
 </div>
 {% endblock %}
