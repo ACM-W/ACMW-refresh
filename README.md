@@ -6,6 +6,6 @@
 2. `cd` into the new directory: `$ cd ACMW-refresh`
 3. install flask and other requirements: `$ pip install -r requirements.txt`
   - if you want, you can do this inside of a virtualenv
-4. tell flask where to find the app: `$ export FLASK_APP=app.py`
-5. *optionally*, turn on flask's debug mode: `$ export FLASK_DEBUG=1`
+4. tell flask where to find the app: `$ export FLASK_APP=app.py` or `$ set FLASK_APP=app.py`
+5. *optionally*, turn on flask's debug mode: `$ export FLASK_DEBUG=1` or `$ set FLASK_DEBUG=1`
 6. **run the development server**: `$ flask run`
