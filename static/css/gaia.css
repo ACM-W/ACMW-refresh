@@ -306,7 +306,7 @@ body > .navbar-collapse a {
   border-color: #c2273c; }
 
 *::selection {
-  background: #f88f58;
+  background: #0057ab;
   color: #FFFFFF; }
 
 .form-control {
@@ -2072,7 +2072,7 @@ body.noscroll {
     left: 0;
     width: 100%;
     height: auto;
-    background: url("../img/pattern.png");
+    background: url("http://localhost:5000/static/img/pattern.png");
     z-index: 2;
     content: ""; }
 
