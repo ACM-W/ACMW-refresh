@@ -1,89 +1,81 @@
 <!doctype html> {% extends "base.html" %} {% block content %} {% include "banner.html" %}
 <div class="section section-blog-horizontal">
-    <div class="container">
-        <div class="title">
-            <h1>ACM-W Events</h1>
-            <div class="separator separator-primary">✻</div>
-        </div>
-        <div class="card card-plain card-blog">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="/events/stem-expo" class="header">
-                        <img src="{{ url_for('static', filename='img/events/stem-expo.jpg')}}" alt="STEM Expo">
-                    </a>
-                </div>
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="content">
-                        <h5 class="card-category text-info">October 15, 2017</h5>
-                        <a href="#link" class="card-title">
-                            <h2>STEM Expo</h2>
-                        </a>
-                        <p class="text-gray">Every year, we team up with the Girl Scouts of Orange County to bring over 400 girls, ranging from 4th to 12th grade, to our campus to explore the world of science, technology, engineering, and mathematics. Send us an email to sign up to volunteer!</p>
-                        <a href="/events/stem-expo" class="btn btn-info btn-fill">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card card-plain card-blog">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="content">
-                        <h5 class="card-category text-warning">May 6, 2018</h5>
-                        <a href="#link" class="card-title">
-                            <h2>Code Camp</h2>
-                        </a>
-                        <p class="text-gray">We invite local high school and Cal State Fullerton students to join us in a programming crash course designed to get them interested in computer science.</p>
-                        <a href="/events/code-camp" class="btn btn-warning btn-fill">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-offset-1">
-                    <a href="/events/stem-expo" class="header">
-                        <img src="{{ url_for('static', filename='img/events/code-camp.jpg')}}" alt="Code Camp">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card card-plain card-blog">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="/events/leadership-summit" class="header">
-                        <img src="{{ url_for('static', filename='img/events/leadership-summit.jpg')}}" alt="Leadership Summit" style="height: 100%;">
-                    </a>
-                </div>
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="content">
-                        <h5 class="card-category text-success">Coming April 2018</h5>
-                        <a href="#link" class="card-title">
-                            <h2>Computer Science Diversity &amp; Leadership Summit</h2>
-                        </a>
-                        <p class="text-gray">The Computer Science and Diversity Summit aims to develop leadership skills through team-building activities, learn the components of a good team, diversity at the workplace through panels and speed mentoring. </p>
-                        <a href="/events/leadership-summit" class="btn btn-success btn-fill">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card card-plain card-blog">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="content">
-                        <h5 class="card-category text-info">Coming Spring 2018</h5>
-                        <a href="#link" class="card-title">
-                            <h2>Creative Coding</h2>
-                        </a>
-                        <p class="text-gray">Creative Coding is an opportunity for young women to learn about a variety of ways computer science can be used to creatively solve problems using technologies like Ozobots, Google Cardboard, and Raspberry Pi.</p>
-                        <a href="/events/creative-coding" class="btn btn-info btn-fill">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-offset-1">
-                    <a href="/events/creative-coding" class="header">
-                        <img src="{{ url_for('static', filename='img/events/creative-coding.jpg')}}" alt="Creative Coding">
-                    </a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="title">
+      <h1>ACM-W Events</h1>
+      <div class="separator separator-primary">✻</div>
     </div>
+    <div class="card card-plain card-blog">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/events/stem-expo" class="header">
+            <img src="{{ url_for('static', filename='img/events/stem-expo.jpg')}}" alt="STEM Expo">
+          </a>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <div class="content">
+            <h5 class="card-category text-info">October 15, 2017</h5>
+            <h2 class="card-title">STEM Expo</h2>
+            <p class="text-gray">Every year, we team up with the Girl Scouts of Orange County to bring over 400 girls, ranging from 4th to 12th grade, to our campus to explore the world of science, technology, engineering, and mathematics. Send us an email to sign up to volunteer!</p>
+            <a href="/events/stem-expo" class="btn btn-info btn-fill">Read about the EXPO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-plain card-blog">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="content">
+            <h5 class="card-category text-warning">May 6, 2018</h5>
+            <h2 class="card-title">Code Camp</h2>
+            <p class="text-gray">We invite local high school and Cal State Fullerton students to join us in a programming crash course designed to get them interested in computer science.</p>
+            <a href="/events/code-camp" class="btn btn-warning btn-fill">Check out Code Camp</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <a href="/events/stem-expo" class="header">
+            <img src="{{ url_for('static', filename='img/events/code-camp.jpg')}}" alt="Code Camp">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-plain card-blog">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/events/leadership-summit" class="header">
+            <img src="{{ url_for('static', filename='img/events/leadership-summit.jpg')}}" alt="Leadership Summit" style="height: 100%;">
+          </a>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <div class="content">
+            <h5 class="card-category text-success">Coming April 2018</h5>
+            <h2 class="card-title">Computer Science Diversity &amp; Leadership Summit</h2>
+            <p class="text-gray">The Computer Science and Diversity Summit aims to develop leadership skills through team-building activities, learn the components of a good team, diversity at the workplace through panels and speed mentoring. </p>
+            <a href="/events/leadership-summit" class="btn btn-success btn-fill">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-plain card-blog">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="content">
+            <h5 class="card-category text-info">Coming Spring 2018</h5>
+            <h2 class="card-title">Creative Coding</h2>
+            <p class="text-gray">Creative Coding is an opportunity for young women to learn about a variety of ways computer science can be used to creatively solve problems using technologies like Ozobots, Google Cardboard, and Raspberry Pi.</p>
+            <a href="/events/creative-coding" class="btn btn-info btn-fill">Get Creative with US</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <a href="/events/creative-coding" class="header">
+            <img src="{{ url_for('static', filename='img/events/creative-coding.jpg')}}" alt="Creative Coding">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

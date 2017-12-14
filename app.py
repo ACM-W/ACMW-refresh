@@ -33,7 +33,7 @@ def creative_coding():
 
 @app.route('/events/leadership-summit')
 def leadership_summit():
-    return render_template('events/summit.html', bannerurl=url_for('static', filename='img/events/leadership-summit.jpg'), title='Computer Science Diversity and Leadership Summit')
+    return render_template('events/leadership-summit.html', bannerurl=url_for('static', filename='img/events/leadership-summit.jpg'), title='Computer Science Diversity and Leadership Summit')
 
 @app.route('/events/stem-expo')
 def stem_expo():
